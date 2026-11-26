@@ -1,0 +1,1 @@
+document.querySelectorAll(".card").forEach(card=>{const select=card.querySelector("select");const button=card.querySelector(".book-btn");if(select&&button){select.addEventListener("change",()=>{button.textContent="Book "+select.value+" traveller"+(select.value==="1"?"":"s")})}});
